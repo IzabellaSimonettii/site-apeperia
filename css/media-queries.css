@@ -32,14 +32,14 @@
 		margin: .4em;
 	}
 
-	.destaque {
+	.featured {
 		font-size: 14px;
 		height: 250px;
 	}
 
 	.menu-opcoes,
 	.menu-opcoes li,
-	.post-destaque,
+	.post-featured,
 	.posts-antigos,
 	form {
 		width: auto;

@@ -1,7 +1,7 @@
 
 // Contact   
-.contato input,
-.contato button {
+.contact input,
+.contact button {
   display: block;
 }
 
@@ -10,7 +10,7 @@ form {
   width: 50%;
 }
 
-.contato input,
+.contact input,
 textarea {
   width: 100%;
   margin-bottom: 0.8em;
@@ -18,11 +18,11 @@ textarea {
   border: 2px solid #ccc;
 }
 
-.contato button {
+.contact button {
   margin: 0 auto;
-  background: $cor-padrao;
+  background: $pattern-color;
   border: 0;
-  color: $cor-branca;
+  color: $white-color;
   width: 210px;
   height: 38px;
   font-size: 1.2em;

@@ -1,6 +1,6 @@
 // Featured
-.destaque {
-    background: url(../imagens/destaque.jpg) center bottom repeat-x;
+.featured {
+    background: url(../imagens/featured.jpg) center bottom repeat-x;
     -webkit-background-size: cover;
     background-size: cover;
     color: white;
@@ -8,24 +8,24 @@
     padding-top: 10em;
   }
   
-  .destaque p {
+  .featured p {
     width: 30em;
   }
   
-  .destaque p:first-child {
+  .featured p:first-child {
     width: 30em;
     font-size: 1.3em;
     line-height: 1.1;
   }
   
-  .destaque p:first-child:first-line {
+  .featured p:first-child:first-line {
     font-size: 2.2em;
     font-weight: bold;
   }
   
-  .destaque button {
+  .featured button {
     margin-top: 1em;
-    background: $cor-padrao;
+    background: $pattern-color;
     border: 0;
     padding: 0.6em;
     font-size: 1.2em;

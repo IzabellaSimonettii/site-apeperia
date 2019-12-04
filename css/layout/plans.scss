@@ -1,13 +1,13 @@
 
 // Plans 
-.planos {
-    background: cor-auxiliar;
+.plans {
+    background: aux-color;
     h2 {
-      color: $cor-branca;
+      color: $white-color;
     }
   }
   
-  .plano {
+  .plan {
     background: white;
     width: 18em;
     display: inline-block;
@@ -17,9 +17,9 @@
       background: #dedede;
     }
     h3 {
-      color: $cor-branca;
+      color: $white-color;
       font-size: 1.8em;
-      background: $cor-padrao;
+      background: $pattern-color;
       text-align: center;
       height: 2em;
       padding-top: 0.6em;
@@ -27,13 +27,13 @@
     }
     div {
       text-align: center;
-      color: $cor-padrao;
+      color: $pattern-color;
       font-size: 2.75em;
     }
     button {
-      background: $cor-padrao;
+      background: $pattern-color;
       border: 0;
-      color: $cor-branca;
+      color: $white-color;
       width: 210px;
       height: 38px;
       font-size: 1.2em;
@@ -41,7 +41,7 @@
       margin-left: 2em;
     }
   }
-  .itens-plano {
+  .itens-plan {
     padding-left: 1.2em;
   
     li {
