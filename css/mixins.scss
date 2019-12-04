@@ -1,0 +1,25 @@
+// Mixins
+
+@mixin round-border {
+    -webkit-border-radius: $radio;
+    border-radius: $radio;
+  }
+  
+  @mixin extreme-border($big-radio: 0.3em) {
+    -webkit-border-radius: $big-radio;
+    border-radius: $big-radio;
+  }
+  
+  @mixin border-pattern {
+    -webkit-box-shadow: $radio;
+    -moz-box-shadow: $radio;
+    -o-box-shadow: $radio;
+    -ms-box-shadow: $radio;
+    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  }
+  
+  @mixin image-replacement {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
