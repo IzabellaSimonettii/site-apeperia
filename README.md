@@ -1,4 +1,16 @@
 # site-apeperia
 
-Comando do Sass que transpila o scss em css - 
-   sass estilos.scss:estilos.css
+Before componentizing 
+Command in the mac to watch the changes 
+   sass --waitch style.scss:style.css
+
+   ---
+
+Sass command 
+   sass style.scss:style.css
+
+
+
+
+
+   
