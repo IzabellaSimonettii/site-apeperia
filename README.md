@@ -24,5 +24,20 @@ $variable: lightness (color); - lightness(#BADA55)
 
 
 
+Use mixin when you have a patten value or just a value to imput in the call, otherwise you can use a placeholder.
 
-   
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+ to use ->  @include size(23, 9);
+
+
+%placeholder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@extend %placeholder;
