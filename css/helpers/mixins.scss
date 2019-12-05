@@ -1,22 +1,22 @@
 // Mixins
 
 @mixin round-border {
-    -webkit-border-radius: $radio;
-    border-radius: $radio;
-  }
-  
-  @mixin extreme-border($big-radio: 0.3em) {
-    -webkit-border-radius: $big-radio;
-    border-radius: $big-radio;
-  }
-  
-  @mixin image-replacement {
-    text-indent: -9999px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-  }
+  -webkit-border-radius: $radio;
+  border-radius: $radio;
+}
 
-  %pattern-shadow {
-    -webkit-box-shadow: $color-shadow;
-    box-shadow: $color-shadow;
-  }
+@mixin extreme-border($big-radio: 0.3em) {
+  -webkit-border-radius: $big-radio;
+  border-radius: $big-radio;
+}
+
+%image-replacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+%pattern-shadow {
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+}

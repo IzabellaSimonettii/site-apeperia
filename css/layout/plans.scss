@@ -37,6 +37,7 @@
       width: 210px;
       height: 38px;
       font-size: 1.2em;
+      @extend %pattern-shadow;
       @include extreme-border;
       margin-left: 2em;
     }
