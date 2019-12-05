@@ -1,52 +1,46 @@
-
 // About
 .about {
-    background: #ebebeb;
+  background: #ebebeb;
+  p {
+    font: 0.9em/1.8 sans-serif;
+    :first-child {
+      margin-bottom: 3em;
+    }
   }
-  
-  .two-columns {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    columns: 1;
-  }
-  
-  .two-columns h3 {
+}
+
+.two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  columns: 1;
+  h3 {
     margin: 0;
   }
-  
-  .about p {
-    font: 0.9em/1.8 sans-serif;
-  }
-  
-  .about p:first-child {
-    margin-bottom: 3em;
-  }
-  
-  .platforms {
-    padding: 0;
-  }
-  
-  .platforms li {
+}
+
+.platforms {
+  padding: 0;
+  li {
     display: inline-block;
     width: 50px;
     height: 60px;
     background-position: center;
     margin: 1em 1.5em 0 0;
+    :nth-child(1) {
+      background-image: url(../imagens/logo-apple.png);
+    }
+
+    :nth-child(2) {
+      background-image: url(../imagens/logo-android.png);
+    }
+
+    :nth-child(3) {
+      background-image: url(../imagens/logo-windows.png);
+    }
+
+    :nth-child(4) {
+      background-image: url(../imagens/logo-blackberry.png);
+    }
   }
-  
-  .platforms li:nth-child(1) {
-    background-image: url(../imagens/logo-apple.png);
-  }
-  
-  .platforms li:nth-child(2) {
-    background-image: url(../imagens/logo-android.png);
-  }
-  
-  .platforms li:nth-child(3) {
-    background-image: url(../imagens/logo-windows.png);
-  }
-  
-  .platforms li:nth-child(4) {
-    background-image: url(../imagens/logo-blackberry.png);
-  }
+}

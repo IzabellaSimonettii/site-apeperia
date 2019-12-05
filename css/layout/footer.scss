@@ -1,10 +1,9 @@
-// Footer  
+// Footer
+
 footer {
-    display: block;
-    position: relative;
-  }
-  
-  footer::after {
+  display: block;
+  position: relative;
+  ::after {
     content: "";
     background: url(../imagens/fundo-rodape.png);
     opacity: 0.02;
@@ -15,8 +14,8 @@ footer {
     position: absolute;
     z-index: -1;
   }
-  
-  footer::before {
+
+  ::before {
     content: "";
     background: $aux-color;
     top: 0;
@@ -26,73 +25,66 @@ footer {
     position: absolute;
     z-index: -1;
   }
-  
-  footer .container {
-    padding-top: 3em;
-    height: 6.5em;
-    position: relative;
-  }
-  
-  footer .container img {
-    width: 250px;
-  }
-  
-  .menu-rodape,
-  .social {
-    position: absolute;
-  }
-  
-  .menu-rodape ul li {
-    display: inline-block;
-    margin-left: 2em;
-  }
-  
-  .menu-rodape {
-    top: 1em;
-    right: 0;
-  }
-  
-  .social {
-    bottom: 0;
-    right: 0;
-  }
-  
-  .menu-rodape li,
-  .social li {
-    display: inline;
-  }
-  
-  footer a {
+  a {
     color: $white-color;
     text-decoration: none;
   }
-  
-  .social li {
+  .container {
+    padding-top: 3em;
+    height: 6.5em;
+    position: relative;
+    img {
+      width: 250px;
+    }
+  }
+}
+
+.menu-rodape {
+  top: 1em;
+  right: 0;
+  .social {
+    position: absolute;
+  }
+  ul {
+    li {
+      display: inline-block;
+      margin-left: 2em;
+      .social {
+        li {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  bottom: 0;
+  right: 0;
+  li {
     float: left;
+    a {
+      display: block;
+      width: 55px;
+      height: 55px;
+      @extend %image-replacement;
+      margin-left: 1em;
+    }
+    a {
+      background-position: top;
+      background-size: 50px 50px;
+    }
+
+    a[href*="facebook"] {
+      background-image: url(../imagens/facebook.png);
+    }
+
+    a[href*="twitter"] {
+      background-image: url(../imagens/twitter.png);
+    }
+
+    a[href*="instagram"] {
+      background-image: url(../imagens/instagram.png);
+    }
   }
-  
-  .social li a {
-    display: block;
-    width: 55px;
-    height: 55px;
-    @extend %image-replacement;
-    margin-left: 1em;
-  }
-  
-  .social a {
-    background-position: top;
-    background-size: 50px 50px;
-  }
-  
-  .social a[href*="facebook"] {
-    background-image: url(../imagens/facebook.png);
-  }
-  
-  .social a[href*="twitter"] {
-    background-image: url(../imagens/twitter.png);
-  }
-  
-  .social a[href*="instagram"] {
-    background-image: url(../imagens/instagram.png);
-  }
-  
+}

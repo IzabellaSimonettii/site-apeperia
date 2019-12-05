@@ -1,29 +1,25 @@
 // Featured
 .featured {
-    background: url(../imagens/featured.jpg) center bottom repeat-x;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: white;
-    height: 330px;
-    padding-top: 10em;
-  }
-  
-  .featured p {
+  background: url(../imagens/featured.jpg) center bottom repeat-x;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: white;
+  height: 330px;
+  padding-top: 10em;
+  p {
     width: 30em;
+
+    :first-child {
+      width: 30em;
+      font-size: 1.3em;
+      line-height: 1.1;
+      :first-line {
+        font-size: 2.2em;
+        font-weight: bold;
+      }
+    }
   }
-  
-  .featured p:first-child {
-    width: 30em;
-    font-size: 1.3em;
-    line-height: 1.1;
-  }
-  
-  .featured p:first-child:first-line {
-    font-size: 2.2em;
-    font-weight: bold;
-  }
-  
-  .featured button {
+  button {
     margin-top: 1em;
     background: $pattern-color;
     border: 0;
@@ -33,4 +29,4 @@
     @extend %pattern-shadow;
     font-weight: bold;
   }
-  
+}

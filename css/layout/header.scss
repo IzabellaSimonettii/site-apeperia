@@ -1,14 +1,17 @@
- //Header 
+//Header
 header {
   border-top: 5px solid $pattern-color;
   background: rgba(30, 44, 53, 0.8);
   height: 90px;
   width: 100%;
   position: absolute;
-}
+  .container {
+    position: relative;
 
-header .container {
-  position: relative;
+    @media (max-width: 980px) {
+      position: static;
+    }
+  }
 }
 
 .main-menu {

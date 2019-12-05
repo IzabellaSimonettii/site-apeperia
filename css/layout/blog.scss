@@ -1,10 +1,9 @@
-// Blog  
+// Blog
 .blog {
-    display: block;
-    position: relative;
-  }
-  
-  .blog::after {
+  display: block;
+  position: relative;
+
+  ::after {
     content: "";
     background: url(../imagens/fundo.png);
     background-size: 25px 25px;
@@ -16,31 +15,33 @@
     position: absolute;
     z-index: -1;
   }
-  
-  .post-featured,
-  .posts-antigos {
-    width: 48%;
-    display: inline-block;
-    vertical-align: top;
-  }
-  
-  .post-featured {
-    margin-right: 2em;
-  }
-  
-  .post-featured img {
+}
+
+.post-featured,
+.posts-antigos {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.post-featured {
+  margin-right: 2em;
+  img {
     width: 100%;
   }
-  
-  .posts-antigos a {
+}
+
+.posts-antigos {
+  a {
     text-decoration: none;
     color: black;
     background: url(../imagens/icone-relogio.png) left center no-repeat;
     padding-left: 2.5em;
     height: 1.7em;
     display: block;
+    & hover {
+      text-decoration: underline;
+    }
   }
-  
-  .posts-antigos a:hover {
-    text-decoration: underline;
-  }
+}
+
